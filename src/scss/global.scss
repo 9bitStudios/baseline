@@ -1,5 +1,7 @@
 @import "variables.scss";
 
+@include Baseline-Font-OpenSans();
+
 /**************************************************
 BASIC HTML
 ***************************************************/
@@ -40,13 +42,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-body {
-    font-size: 12px; 
-    font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
-    color: #666;
-    background:#fff;
-}
-
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
     display: block;
 }
@@ -60,7 +55,7 @@ HEADINGS
 ***************************************************/
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: $baseline-header-font-family;
     font-weight: bold;
     font-style: normal;
     color: #222222;
