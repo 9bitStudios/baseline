@@ -4,7 +4,7 @@
 BUTTONS
 ***************************************************/
 
-.baseline-button {
+.#{$baseline-prefix}-button {
     text-decoration: none;
     text-align: center;
     cursor: pointer;

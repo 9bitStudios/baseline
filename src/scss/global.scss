@@ -1,6 +1,7 @@
 @import "variables.scss";
 
-@include Baseline-Font-OpenSans();
+@include Baseline-Font-Include("Open Sans");
+@include Baseline-Font-Include("Helvetica Neue");
 
 /**************************************************
 BASIC HTML
@@ -89,24 +90,6 @@ hr {
     clear: both;
     margin: 22px 0 21px;
     height: 0;
-}
-
-h1,h2,h3,h4,h5,h6 { 
-
-    font-weight:normal; 
-
-    &.sectionHeader {
-        margin-top:24px;
-        margin-bottom: 10px;
-        background:url(images/section-header-background.png);
-
-        span {
-            padding: 0px 10px 0px 0px;
-            background:#fff;    
-        }
-
-    }
-    
 }
 
 /**************************************************
@@ -222,22 +205,6 @@ abbr { text-transform: none }
 figure { margin: 0 }
 
 /**************************************************
-CODE
-***************************************************/
-pre,
-code, .code {
-    display:block;
-    padding:10px;
-    margin:10px 0px;
-    font-family: 'DejaVu Sans Mono', Monaco, Consolas, monospace;
-}
-
-code {
-    border:1px solid #eee;
-    background:#fcfcfc;
-}
-
-/**************************************************
 AUDIO/VIDEO
 ***************************************************/
 
@@ -245,11 +212,6 @@ audio, canvas, video {
     display: inline-block;
     *display: inline;
     *zoom: 1;
-}
-
-audio:not([controls]) {
-    display: none;
-    height: 0;
 }
 
 video {
@@ -289,18 +251,6 @@ svg {
 
 svg:not(:root) {
     overflow: hidden;
-}
-
-img.grayscaleImage {
-    filter: url(filters.svg#grayscale); 
-    filter: gray; 
-    -webkit-filter: grayscale(1); 
-}
-
-img.circleImage {
-    border-radius:500px;
-    -moz-border-radius:500px;
-    -webkit-border-radius:500px;
 }
 
 /**************************************************
@@ -400,23 +350,6 @@ input[type=submit]::-moz-focus-inner  {
 }
 
 /**************************************************
-LISTS
-***************************************************/
-
-ol {
-    list-style: decimal;
-}
-
-ul {
-    list-style: disc;
-}
-
-li {
-    margin-left: 30px;
-    display:list-item;
-}
-
-/**************************************************
 TABLES
 ***************************************************/
 
@@ -468,3 +401,8 @@ MISC
 .right { float: right }
 .center { text-align: center }
 .bold { font-weight: bold; }
+.grayscale {
+    filter: url(filters.svg#grayscale); 
+    filter: gray; 
+    -webkit-filter: grayscale(1); 
+}

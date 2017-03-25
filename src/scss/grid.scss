@@ -3,10 +3,14 @@
 /**************************************************
 GRID
 ***************************************************/
+.container {
+    width: $baseline-global-container-width;
+    margin: 0 auto;
+    max-width: 100%;
+}
 
 .row {
     max-width: 100%;
-    margin: 0 auto;
 }
 .row .row {
     width: auto;
