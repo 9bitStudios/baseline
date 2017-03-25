@@ -8,15 +8,24 @@
     },
     "homepage": "http://www.9bitstudios.com",
     "devDependencies": {
-        "gulp": "*",
-        "gulp-sass": "*",
-        "gulp-streamify": "*",
-        "gulp-rename": "*",
-        "gulp-uglify": "*",
         "browserify": "*",
         "babelify": "*",
         "babel-preset-es2015": "*", 
         "babel-preset-react": "*",		
-        "vinyl-source-stream": "*"		
+        "vinyl-source-stream": "*",		
+        "gulp": "*",
+        "gulp-sass": "*",
+        "gulp-streamify": "*",
+        "gulp-rename": "*",
+        "gulp-uglify": "*",        
+        "grunt": "*",
+        "grunt-contrib-cssmin": "*",
+        "grunt-contrib-sass": "*",
+        "grunt-browserify": "*",
+        "grunt-contrib-concat": "*",  
+        "grunt-contrib-uglify": "*",
+        "grunt-contrib-clean": "*",
+        "grunt-contrib-watch": "*"
+
     }
 }
