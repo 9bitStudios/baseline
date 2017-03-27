@@ -1748,7 +1748,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #222222;
   text-rendering: optimizeLegibility;
   line-height: 1.1;
-  margin-bottom: 14px;
+  margin-bottom: 20px;
   margin-top: 14px; }
 
 h1 {
@@ -1800,13 +1800,13 @@ a:hover {
   outline: 0; }
 
 a {
-  color: #cc5539;
-  text-decoration: none; }
+  color: #009; }
   a:hover {
-    color: #f66340;
-    text-decoration: none; }
-  a.more-link {
-    font-weight: bold; }
+    color: #036; }
+  a:active {
+    color: #036; }
+  a:visited {
+    color: #036; }
 
 /**************************************************
 TEXT
@@ -1814,7 +1814,7 @@ TEXT
 p {
   font-family: inherit;
   font-weight: normal;
-  margin-bottom: 17px; }
+  margin-bottom: 20px; }
 
 em, i {
   font-style: italic;
@@ -1831,8 +1831,7 @@ abbr[title] {
   border-bottom: 1px dotted; }
 
 code, kbd, pre, samp {
-  font-family: monospace, serif;
-  _font-family: 'courier new', monospace; }
+  font-family: 'courier new', monospace, serif; }
 
 pre {
   white-space: pre;
@@ -2154,6 +2153,39 @@ GRID
 
 .row:after {
   clear: both; }
+
+/**************************************************
+TEXT
+***************************************************/
+.baseline-inline-quote {
+  font-style: italic;
+  color: #ccc;
+  width: 220px; }
+  .baseline-inline-quote.left {
+    float: left;
+    padding: 0 10px 10px 0;
+    margin: 0 10px 0 0;
+    border-right: 3px solid #999; }
+  .baseline-inline-quote.right {
+    float: right;
+    padding: 0 0 10px 10px;
+    margin: 0 0 0 10px;
+    border-left: 3px solid #999; }
+
+.baseline-inline-box {
+  background: #eee;
+  font-style: italic;
+  border: 1px solid #ccc;
+  color: #999;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  width: 220px;
+  padding: 20px; }
+  .baseline-inline-box.left {
+    margin: 0 10px 10px 0; }
+  .baseline-inline-box.right {
+    margin: 0 0 10px 10px; }
 
 /**************************************************
 BUTTONS
@@ -2542,3 +2574,27 @@ BUTTONS
     background: none; }
     .baseline-button.transparentdark:hover {
       background: #fff; }
+
+/**************************************************
+ALERTS
+***************************************************/
+.baseline-alert {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px; }
+  .baseline-alert.success {
+    border: 1px solid #090;
+    color: #090;
+    background-color: #9fc; }
+  .baseline-alert.warning {
+    border: 1px solid #fc0;
+    color: #fc0;
+    background-color: #ffc; }
+  .baseline-alert.error {
+    border: 1px solid #900;
+    color: #900;
+    background-color: #fc9; }
+  .baseline-alert.information {
+    border: 1px solid #036;
+    color: #036;
+    background-color: #9cf; }

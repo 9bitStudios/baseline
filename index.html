@@ -11,13 +11,25 @@
 
     <style type="text/css">
         /* Styles for demo... */
+
+        .container {
+            background: #fff;
+        }
+
+        .row .row {
+            margin-bottom: 20px;
+        }
         .grid {
             text-align: center;
         }
+        .grid .row {
+           margin-bottom: 0; 
+        }
         .grid .column,
         .grid .columns {
-            padding: 5px;
-            background: #fff;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background: #fcfcfc;
             border: 1px solid #eee;
         }
 
@@ -33,15 +45,53 @@
             <h1>Baseline UI</h1>
             <p>Baseline UI is an, er, baseline framework for your web and mobile projects. It provides a number of basic and sensible defaults for a number of common elements. It does not try to be the entirety of your UI. You could also import other UI frameworks into your project as well with minimal collision.</p>
 
+            <h2>Basic Elements</h2>
+
+            <p>Baseline UI has a few basic text display components...</p>
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <h5>Heading 5</h5>
+                    <h6>Heading 6</h6>
+
+                    <p>Paragraph text...</p>
+
+                    <p>This is some text with <a href="#">a link</a>.</p>
+
+                    <p><pre>Pre text...</pre></p>
+
+                    <p><code>Code text...</code></p>
+
+                    <p>Inline quotes and boxes...</p>
+
+                    <p>
+                        <div class="baseline-inline-quote left">Praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</div> 
+                        Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.<p></p>
+                        <div class="baseline-inline-quote right">Praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </div> 
+                        Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit  eorum claritatem. Investigationes demonstraverunt lectores legere me  lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui  sequitur mutationem consuetudium lectorum. Mirum est notare quam  littera gothica, quam nunc putamus parum claram, anteposuerit litterarum  formas humanitatis per seacula quarta decima et quinta decima. Eodem  modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in  futurum. Duis autem vel eum iriure dolor in hendrerit in vulputate velit  esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at  vero eros et accumsan et iusto odio dignissim qui blandit praesent  luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam  liber tempor cum soluta nobis eleifend option congue nihil imperdiet  doming id quod mazim placerat facer possim assum.                    
+                    </p>
+
+                    <p>
+                        <div class="baseline-inline-box left">Praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</div> 
+                        Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.<p></p>
+                        <div class="baseline-inline-box right">Praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </div> 
+                        Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit  eorum claritatem. Investigationes demonstraverunt lectores legere me  lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui  sequitur mutationem consuetudium lectorum. Mirum est notare quam  littera gothica, quam nunc putamus parum claram, anteposuerit litterarum  formas humanitatis per seacula quarta decima et quinta decima. Eodem  modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in  futurum. Duis autem vel eum iriure dolor in hendrerit in vulputate velit  esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at  vero eros et accumsan et iusto odio dignissim qui blandit praesent  luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam  liber tempor cum soluta nobis eleifend option congue nihil imperdiet  doming id quod mazim placerat facer possim assum.                    
+                    </p>
+
+                </div>
+            </div>
+
             <h2>Grid</h2>
 
             <p>Baseline UI will give you a nice standard modern responsive grid system...</p>
 
             <div class="grid">
                 <div class="row">
-                    <div class="twelve columns">
-                        100%
-                    </div>
+                    <div class="twelve columns">100%</div>
                 </div>
 
                 <div class="row">
@@ -86,6 +136,26 @@
 
             <div class="row">
                 <div class="twelve columns">
+                    <a href="#" class="baseline-button small red">Button Text</a> 
+                    <a href="#" class="baseline-button small lightred">Button Text</a> 
+                    <a href="#" class="baseline-button small orange">Button Text</a> 
+                    <a href="#" class="baseline-button small yellow">Button Text</a> 
+                    <a href="#" class="baseline-button small green">Button Text</a> 
+                    <a href="#" class="baseline-button small blue">Button Text</a> 
+                    <a href="#" class="baseline-button small navy">Button Text</a> 
+                    <a href="#" class="baseline-button small aqua">Button Text</a> 
+                    <a href="#" class="baseline-button small purple">Button Text</a> 
+                    <a href="#" class="baseline-button small coffee">Button Text</a> 
+                    <a href="#" class="baseline-button small brown">Button Text</a> 
+                    <a href="#" class="baseline-button small black">Button Text</a> 
+                    <a href="#" class="baseline-button small white">Button Text</a> 
+                    <a href="#" class="baseline-button small gray">Button Text</a> 
+                    <a href="#" class="baseline-button small darkgray">Button Text</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns">
                     <a href="#" class="baseline-button red">Button Text</a> 
                     <a href="#" class="baseline-button lightred">Button Text</a> 
                     <a href="#" class="baseline-button orange">Button Text</a> 
@@ -104,6 +174,34 @@
                 </div>
             </div>
 
+            <div class="row">
+                <div class="twelve columns">
+                    <a href="#" class="baseline-button large red">Button Text</a> 
+                    <a href="#" class="baseline-button large lightred">Button Text</a> 
+                    <a href="#" class="baseline-button large orange">Button Text</a> 
+                    <a href="#" class="baseline-button large yellow">Button Text</a> 
+                    <a href="#" class="baseline-button large green">Button Text</a> 
+                    <a href="#" class="baseline-button large blue">Button Text</a> 
+                    <a href="#" class="baseline-button large navy">Button Text</a> 
+                    <a href="#" class="baseline-button large aqua">Button Text</a> 
+                    <a href="#" class="baseline-button large purple">Button Text</a> 
+                    <a href="#" class="baseline-button large coffee">Button Text</a> 
+                    <a href="#" class="baseline-button large brown">Button Text</a> 
+                    <a href="#" class="baseline-button large black">Button Text</a> 
+                    <a href="#" class="baseline-button large white">Button Text</a> 
+                    <a href="#" class="baseline-button large gray">Button Text</a> 
+                    <a href="#" class="baseline-button large darkgray">Button Text</a>
+                </div>
+            </div>
+
+            <h2>Alerts</h2>
+
+            <p>Alerts will provide a nice UI to give your website or application notifications...</p>
+
+            <div class="baseline-alert success"><i class="fa fa-check-circle"></i> This is an accepted alert box </div>
+            <div class="baseline-alert warning"><i class="fa fa-exclamation-triangle"></i> This is a warning alert box </div>
+            <div class="baseline-alert error"><i class="fa fa-times-circle"></i> This is a cancel alert box </div>
+            <div class="baseline-alert information"><i class="fa fa-info-circle"></i> This is an information alert box </div>
         </div>
     </div>
 </div>

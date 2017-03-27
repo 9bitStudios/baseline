@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #222222;
     text-rendering: optimizeLegibility;
     line-height: 1.1;
-    margin-bottom: 14px;
+    margin-bottom: 20px;
     margin-top: 14px;
 }
 
@@ -110,18 +110,20 @@ a:hover {
 }
 
 a {
-    color: #cc5539;
-    text-decoration: none;
+    color: $baseline-color-link-text;
 
     &:hover {
-        color: #f66340;
-        text-decoration: none;
-    }
-
-    &.more-link {
-        font-weight:bold;
+        color: $baseline-color-link-text-hover;
     }
    
+    &:active {
+        color: $baseline-color-link-text-hover;
+    }
+
+    &:visited {
+        color: $baseline-color-link-text-hover;
+    }    
+
 }
 
 /**************************************************
@@ -131,7 +133,7 @@ TEXT
 p {
     font-family: inherit;
     font-weight: normal;
-    margin-bottom: 17px;
+    margin-bottom: 20px;
 }
 
 em, i {
@@ -153,8 +155,7 @@ abbr[title] {
 }
 
 code, kbd, pre, samp {
-    font-family: monospace, serif;
-    _font-family: 'courier new', monospace;
+    font-family: 'courier new', monospace, serif;
 }
 
 pre {
