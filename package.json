@@ -7,6 +7,9 @@
         "url": "https://github.com/9bitStudios/baseline.git"
     },
     "homepage": "http://www.9bitstudios.com",
+    "dependencies": {
+        "jquery": "3.2.x"
+    },
     "devDependencies": {
         "browserify": "*",
         "babelify": "*",
