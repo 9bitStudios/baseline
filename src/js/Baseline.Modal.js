@@ -23,13 +23,12 @@ export class Modal {
 
         let timeout;
         
-		$(window).on("resize", function(event){
+		$(window).on("resize", e => {
             clearTimeout(timeout);
-            timeout = setTimeout(function(){
+            timeout = setTimeout(() => {
                 this.positionModal();
             });
-		});				
-       
+		});
     }
 
     removeEventHandlers(){
