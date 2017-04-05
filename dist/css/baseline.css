@@ -2624,3 +2624,106 @@ ALERTS
   top: 0;
   left: 0;
   z-index: 1; }
+
+/**************************************************
+ACCORDION
+***************************************************/
+.baseline-accordion .baseline-accordion-header {
+  display: block;
+  background: #eee;
+  background: #eee -moz-linear-gradient(top, #fcfcfc 0%, #eee 100%);
+  /* FF3.6+ */
+  background: #eee -webkit-linear-gradient(top, #fcfcfc 0%, #eee 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: #eee -o-linear-gradient(top, #fcfcfc 0%, #eee 100%);
+  /* Opera11.10+ */
+  background: #eee -ms-linear-gradient(top, #fcfcfc 0%, #eee 100%);
+  /* IE10+ */
+  background: #eee linear-gradient(top, #fcfcfc 0%, #eee 100%);
+  /* W3C */
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+  margin-bottom: 10px; }
+  .baseline-accordion .baseline-accordion-header span:before {
+    font-family: 'FontAwesome';
+    content: "\f067";
+    padding-right: 20px; }
+  .baseline-accordion .baseline-accordion-header:hover {
+    background: #fcfcfc; }
+
+.baseline-accordion .baseline-accordion-active span:before {
+  content: "\f068"; }
+
+.baseline-accordion .baseline-accordion-conent {
+  margin-bottom: 10px; }
+
+/**************************************************
+TABS
+***************************************************/
+.baseline-tab-box {
+  width: 99.9%;
+  float: left;
+  overflow: visible; }
+  .baseline-tab-box h3 {
+    padding: 20px 0px; }
+
+.baseline-tabs {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+  width: 99.9%;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc; }
+  .baseline-tabs li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    margin-bottom: -1px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ccc;
+    border-top: 3px solid #aaa;
+    border-left: none; }
+    .baseline-tabs li a {
+      display: block;
+      padding: 5px 7px;
+      outline: none;
+      background: none;
+      background: #eee;
+      text-decoration: none;
+      font-size: 11px;
+      color: #000;
+      outline: none; }
+      .baseline-tabs li a:hover {
+        background: #eee; }
+    .baseline-tabs li.active {
+      border-bottom: 1px solid #fff; }
+      .baseline-tabs li.active a {
+        background: #fff; }
+        .baseline-tabs li.active a:hover {
+          background: #fff; }
+
+.baseline-tab-container {
+  border-top: none;
+  overflow: hidden;
+  clear: both;
+  float: left;
+  width: 99.9%;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  background: #fff; }
+
+.baseline-tab-content {
+  padding: 20px;
+  display: none; }
+  .baseline-tab-content h3 {
+    padding: 0px; }

@@ -1,0 +1,89 @@
+@import "variables.scss";
+
+/**************************************************
+TABS
+***************************************************/
+
+.#{$baseline-selector-prefix}-tab-box {
+    width:99.9%;
+    float:left;
+    overflow: visible;
+
+    h3 {
+        padding:20px 0px;
+    }    
+}
+
+.#{$baseline-selector-prefix}-tabs {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    width:99.9%;
+    border-bottom:1px solid #ccc;
+    border-left:1px solid #ccc;
+        
+    li {
+        float: left;
+        margin: 0;
+        padding: 0;
+        margin-bottom: -1px; 
+        overflow: hidden;
+        position: relative;    
+        border:1px solid #ccc;    
+        border-top:3px solid #aaa;            
+        border-left:none;
+        
+        a {
+            display: block;
+            padding: 5px 7px;
+            outline: none;
+            background:none;
+            background:#eee;
+            text-decoration: none;
+            font-size: 11px;
+            color: #000;
+            outline: none;
+
+
+            &:hover {
+                background: #eee;
+            }                
+        }
+
+        &.active {
+            border-bottom:1px solid #fff;
+
+            a {
+                background: #fff;
+
+                &:hover {
+                    background: #fff;
+                }
+            }
+
+        }    
+    }
+}
+    
+.#{$baseline-selector-prefix}-tab-container {
+    border-top: none;
+    overflow: hidden;
+    clear: both;
+    float: left;
+    width:99.9%;
+    margin-bottom:10px;
+    border-bottom:1px solid #ccc;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    background:#fff;            
+}
+
+.#{$baseline-selector-prefix}-tab-content {
+    padding: 20px;
+    display:none;
+
+    h3 {
+        padding:0px;
+    }
+}    
