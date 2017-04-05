@@ -2656,9 +2656,8 @@ ACCORDION
     padding-right: 20px; }
   .baseline-accordion .baseline-accordion-header:hover {
     background: #fcfcfc; }
-
-.baseline-accordion .baseline-accordion-active span:before {
-  content: "\f068"; }
+  .baseline-accordion .baseline-accordion-header.active span:before, .baseline-accordion .baseline-accordion-header.active i:before {
+    content: "\f068"; }
 
 .baseline-accordion .baseline-accordion-conent {
   margin-bottom: 10px; }

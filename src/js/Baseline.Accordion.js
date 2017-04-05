@@ -15,11 +15,11 @@ export class Accordion {
             if(!nbsAccordionSliding) {
                 nbsAccordionSliding = true;
 
-                if($(this).hasClass("activeItem")) {
-                    $(this).removeClass('activeItem');
+                if($(this).hasClass("active")) {
+                    $(this).removeClass('active');
                 }
                 else { 
-                    $(this).addClass('activeItem');	
+                    $(this).addClass('active');	
                 }
 
                 $(this).next().slideToggle({

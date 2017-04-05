@@ -12,7 +12,8 @@ export class Tabs {
         $("ul.baseline-tabs li:first").addClass("active").show(); 
         $(".baseline-tab-content:first").show(); 
 
-        $("ul.baseline-tabs li").click(function () {
+        $("ul.baseline-tabs li").click(function (e) {
+            e.preventDefault();
             $("ul.baseline-tabs li").removeClass("active"); 
             $(this).addClass("active"); 
             $(".baseline-tab-content").hide(); 

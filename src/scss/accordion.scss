@@ -37,16 +37,16 @@ ACCORDION
         &:hover {
                 background:#fcfcfc;
         }
-    }
 
-    .#{$baseline-selector-prefix}-accordion-active {
-        span {
-            &:before {
-                content: "\f068";
-            }
+        &.active {
+            span, i {
+                &:before {
+                    content: "\f068";
+                }
+            }            
         }
-    }
 
+    }
     .#{$baseline-selector-prefix}-accordion-conent {
         margin-bottom:10px;
     }
