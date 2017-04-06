@@ -1,16 +1,11 @@
 import {Utilities} from './Baseline.Utilities';
-import {Modal} from './Baseline.Modal';
-import {Tabs} from './Baseline.Tabs';
-import {Accordion} from './Baseline.Accordion';
+import {Components} from './Baseline.Components';
 
 class Baseline {
     
     constructor(){
         this.Utilities = Utilities;
-        this.Modal = Modal;
-
-        let tabs = new Tabs();
-        let accordion = new Accordion();
+        this.Components = new Components();
     }
 }
 

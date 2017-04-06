@@ -1,8 +1,10 @@
-@import "variables.scss";
+@import "baseline.variables.scss";
 
 /**************************************************
 TEXT
 ***************************************************/
+
+/*** INLINE QUOTE ***/
 
 .#{$baseline-selector-prefix}-inline-quote {
 
@@ -25,6 +27,8 @@ TEXT
     }
 }
 
+/*** INLINE BOX ***/
+
 .#{$baseline-selector-prefix}-inline-box {
 
     background: #eee;
@@ -45,4 +49,12 @@ TEXT
         margin: 0 0 10px 10px;        
     }
 
+}
+
+/*** DROPCAP ***/
+
+.#{$baseline-selector-prefix}-dropcap {
+    float: left;
+    padding: 5px 10px;
+    margin: 0 5px 0 0;
 }

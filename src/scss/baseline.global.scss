@@ -1,7 +1,8 @@
-@import "variables.scss";
+@import "baseline.variables.scss";
 
 @include Baseline-Font-Include("Open Sans");
 @include Baseline-Font-Include("Helvetica Neue");
+
 
 /**************************************************
 BASIC HTML

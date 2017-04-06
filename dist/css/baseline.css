@@ -2157,6 +2157,7 @@ GRID
 /**************************************************
 TEXT
 ***************************************************/
+/*** INLINE QUOTE ***/
 .baseline-inline-quote {
   font-style: italic;
   color: #ccc;
@@ -2172,6 +2173,7 @@ TEXT
     margin: 0 0 0 10px;
     border-left: 3px solid #999; }
 
+/*** INLINE BOX ***/
 .baseline-inline-box {
   background: #eee;
   font-style: italic;
@@ -2186,6 +2188,12 @@ TEXT
     margin: 0 10px 10px 0; }
   .baseline-inline-box.right {
     margin: 0 0 10px 10px; }
+
+/*** DROPCAP ***/
+.baseline-dropcap {
+  float: left;
+  padding: 5px 10px;
+  margin: 0 5px 0 0; }
 
 /**************************************************
 BUTTONS
@@ -2599,6 +2607,9 @@ ALERTS
     color: #036;
     background-color: #9cf; }
 
+/**************************************************
+MODAL
+***************************************************/
 .baseline-modal {
   display: none;
   position: fixed;
