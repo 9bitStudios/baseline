@@ -157,6 +157,7 @@ abbr[title] {
 
 code, kbd, pre, samp {
     font-family: 'courier new', monospace, serif;
+    word-wrap: break-word;
 }
 
 pre {
@@ -260,24 +261,56 @@ FORMS
 ***************************************************/
 
 form {
-    margin: 0;
+    margin: 0 0 20px 0;
+
+    fieldset {
+        margin-bottom: 20px; 
+    }
+
 }
 
-input,
+label,
+legend {
+    min-width: 100px;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+input[type="text"],
 select,
 textarea {
     font-size: 100%; 
     margin: 0; 
-    vertical-align: baseline; 
-    *vertical-align: middle; 
+    vertical-align: middle; 
+    padding: 6px 4px;
+    outline: none;
+    margin: 0px;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#fafafa), to(#ffffff));
+    background: -webkit-linear-gradient(top, #fafafa, #ffffff);
+    background: -moz-linear-gradient(top, #fafafa, #ffffff);
+    background: -o-linear-gradient(top, #fafafa, #ffffff);
+    background: -ms-linear-gradient(top, #fafafa, #ffffff);    
+    font-family: $baseline-body-font-family;
+
+    &:focus {
+        border: 1px solid #aaa;
+        color: #444;
+    }
 }
 
 input[type="checkbox"],
 input[type="radio"] {
     box-sizing: border-box;
+    margin: 0 0 0 0;
     padding: 0; 
-    *height: 13px; 
-    *width: 13px; 
+    vertical-align: middle; 
 }
 
 input[type="search"] {
@@ -287,38 +320,12 @@ input[type="search"] {
     box-sizing: content-box;
 }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
-}
-
 input, button {
     line-height: normal;
 }
 
-label,
-legend {
-    min-width: 100px;
-    float:left;
-    font-weight: bold;
-
-    span {
-        font-weight: normal;
-        color: #444;    
-    }
-
-}
-
-form {
-    margin-bottom: 20px; 
-
-    fieldset {
-        margin-bottom: 20px; 
-    }
-}
-
 textarea {
-    min-width:400px;    
+    width: 80%;
     min-height: 150px;
 }
 
@@ -337,7 +344,52 @@ input[type="reset"],
 input[type="submit"] {
     -webkit-appearance: button;
     cursor: pointer;
-    *overflow: visible;
+    padding: 4px 12px;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 20px;
+    line-height: 21px;
+    background: #eee; /* Old browsers */
+    background: #eee -moz-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* FF3.6+ */
+    background: #eee -webkit-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* Chrome10+,Safari5.1+ */
+    background: #eee -o-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* Opera11.10+ */
+    background: #eee -ms-linear-gradient(top, #fcfcfc 0%, #eee 100%); /* IE10+ */
+    background: #eee linear-gradient(top, #fcfcfc 0%, #eee 100%); /* W3C */
+    border: 1px solid #aaa;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: #444;
+    text-decoration: none;
+    text-shadow: 0 1px rgba(255, 255, 255, .75);
+    cursor: pointer;
+
+    &:hover {
+        color: #222;
+        background: #ccc; /* Old browsers */
+        background: #ccc -moz-linear-gradient(top, #fcfcfc 0%, #ccc 100%); /* FF3.6+ */
+        background: #ccc -webkit-linear-gradient(top, #fcfcfc 0%, #ccc 100%); /* Chrome10+,Safari5.1+ */
+        background: #ccc -o-linear-gradient(top, #fcfcfc 0%, #ccc 100%); /* Opera11.10+ */
+        background: #ccc -ms-linear-gradient(top, #fcfcfc 0%, #ccc 100%); /* IE10+ */
+        background: #ccc linear-gradient(top, #fcfcfc 0%, #ccc 100%); /* W3C */
+        border: 1px solid #888;
+        border-top: 1px solid #aaa;
+        border-left: 1px solid #aaa;    
+    }
+    &:active {
+        border: 1px solid #666;
+        background: #ddd; /* Old browsers */
+        background: #ddd -moz-linear-gradient(top, #fcfcfc 0%, #ddd 100%); /* FF3.6+ */
+        background: #ddd -webkit-linear-gradient(top, #fcfcfc 0%, #ddd 100%); /* Chrome10+,Safari5.1+ */
+        background: #ddd -o-linear-gradient(top, #fcfcfc 0%, #ddd 100%); /* Opera11.10+ */
+        background: #ddd -ms-linear-gradient(top, #fcfcfc 0%, #ddd 100%); /* IE10+ */
+        background: #ddd linear-gradient(top, #fcfcfc 0%, #ddd 100%); /* W3C */
+        outline:none;    
+    }
+
+
 }
 
 button[disabled],

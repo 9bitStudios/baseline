@@ -63,6 +63,17 @@ export class Utilities {
 
     static get Dates() {
         return {
+
+            getMonthNumber: function(month) {
+                return new Date(Date.parse(month + " 1, 2012")).getMonth() + 1
+            },
+
+            getMonthName: function (num) {
+                var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                num = parseInt(num);
+                return months[num - 1];
+            },
+
             getFormattedDate: function(date){
                 var month = date.getMonth() + 1; // getMonth() returns 0 -11
                 if(month <= 9)

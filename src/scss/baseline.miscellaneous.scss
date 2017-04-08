@@ -4,12 +4,22 @@
 TEXT
 ***************************************************/
 
+blockquote {
+
+    font-style: italic;
+    color: #666;
+    padding: 0 0 10px 10px;
+    margin: 0 0 0 10px;
+    border-left: 3px solid #999;        
+    margin-bottom: 20px;
+}
+
 /*** INLINE QUOTE ***/
 
 .#{$baseline-selector-prefix}-inline-quote {
 
     font-style: italic;
-    color: #ccc; 
+    color: #666; 
     width: 220px;
 
     &.left {
@@ -34,7 +44,7 @@ TEXT
     background: #eee;
     font-style: italic;
     border: 1px solid #ccc;
-    color: #999;
+    color: #666;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
@@ -57,4 +67,18 @@ TEXT
     float: left;
     padding: 5px 10px;
     margin: 0 5px 0 0;
+}
+
+/*** RESPONSIVE ***/
+
+@media only screen and (max-width: 767px) { 
+
+    .#{$baseline-selector-prefix}-inline-quote {
+        width: 100%;
+    }
+
+    .#{$baseline-selector-prefix}-inline-box {
+        width: 100%;
+    }
+
 }
