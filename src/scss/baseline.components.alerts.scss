@@ -34,4 +34,8 @@ ALERTS
         background-color: #9cf;        
     }
 
+    .#{$baseline-selector-prefix}-alert-close {
+        cursor: pointer;
+    }
+
 }

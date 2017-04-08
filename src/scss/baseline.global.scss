@@ -308,7 +308,7 @@ textarea {
 input[type="checkbox"],
 input[type="radio"] {
     box-sizing: border-box;
-    margin: 0 0 0 0;
+    margin: 0;
     padding: 0; 
     vertical-align: middle; 
 }
@@ -459,4 +459,16 @@ MISC
     filter: url(filters.svg#grayscale); 
     filter: gray; 
     -webkit-filter: grayscale(1); 
+}
+
+/*** RESPONSIVE ***/
+
+@media only screen and (max-width: 767px) { 
+
+    input[type="text"],
+    select,
+    textarea {
+        width: 100%;
+    }
+
 }
