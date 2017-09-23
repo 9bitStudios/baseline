@@ -456,9 +456,8 @@ MISC
 .center { text-align: center }
 .bold { font-weight: bold; }
 .grayscale {
-    filter: url(filters.svg#grayscale); 
     filter: gray; 
-    -webkit-filter: grayscale(1); 
+    -webkit-filter: grayscale(1);    
 }
 
 /*** RESPONSIVE ***/
