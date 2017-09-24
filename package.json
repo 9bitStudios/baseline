@@ -17,6 +17,7 @@
         "babel-loader": "*",
         "babel-preset-es2015": "*", 	
         "gulp": "*",
+        "vinyl-source-stream": "*",
         "gulp-sass": "*",
         "gulp-streamify": "*",
         "gulp-rename": "*",

@@ -17,8 +17,11 @@ gulp.task('sass', function() {
 });
 
 gulp.task('transpile', function () {
-    return browserify({entries: './src/js/Baseline.js', extensions: ['.jsx'], debug: true})
-        .transform('babelify', {presets: ['es2015', 'react']})
+    return browserify({
+        entries: './src/js/Baseline.js',
+        debug: true
+    })
+        .transform('babelify', {presets: ['es2015']})
         .bundle()
         .pipe(source('baseline.js'))
         .pipe(gulp.dest('dist/js'))
