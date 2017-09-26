@@ -12,6 +12,27 @@ blockquote {
     margin: 0 0 0 10px;
     border-left: 3px solid #999;        
     margin-bottom: 20px;
+
+    &:before {
+        content: "\201C";
+        position:absolute;
+        top:-10px;
+        left:0px;
+        font-size:80px;
+        font-family: Times New Roman, Serif;
+    }
+
+    .#{$baseline-selector-prefix}-blockquote-author {
+        float: right;
+        clear: both;
+    }
+        
+    .#{$baseline-selector-prefix}-blockquote-subtext {
+        float: right;
+        clear: both;
+        color: #999;            
+    }    
+
 }
 
 /*** INLINE QUOTE ***/

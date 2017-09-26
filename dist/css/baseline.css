@@ -1711,7 +1711,6 @@ dl, hr, ol, ul, pre, table, address, fieldset, figure {
 
 body {
   background: #eee;
-  font-family: "Helvetica Neue";
   font-weight: normal;
   font-style: normal;
   font-size: 14px;
@@ -1730,7 +1729,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 HEADINGS
 ***************************************************/
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans";
   font-weight: bold;
   font-style: normal;
   color: #222222;
@@ -1936,8 +1934,7 @@ textarea {
   background: -webkit-linear-gradient(top, #fafafa, #ffffff);
   background: -moz-linear-gradient(top, #fafafa, #ffffff);
   background: -o-linear-gradient(top, #fafafa, #ffffff);
-  background: -ms-linear-gradient(top, #fafafa, #ffffff);
-  font-family: "Helvetica Neue"; }
+  background: -ms-linear-gradient(top, #fafafa, #ffffff); }
   input[type="text"]:focus,
   select:focus,
   textarea:focus {
@@ -2257,6 +2254,20 @@ blockquote {
   margin: 0 0 0 10px;
   border-left: 3px solid #999;
   margin-bottom: 20px; }
+  blockquote:before {
+    content: "\201C";
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    font-size: 80px;
+    font-family: Times New Roman, Serif; }
+  blockquote .baseline-blockquote-author {
+    float: right;
+    clear: both; }
+  blockquote .baseline-blockquote-subtext {
+    float: right;
+    clear: both;
+    color: #999; }
 
 /*** INLINE QUOTE ***/
 .baseline-inline-quote {

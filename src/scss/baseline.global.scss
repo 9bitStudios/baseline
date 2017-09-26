@@ -30,7 +30,6 @@ dl,hr,ol,ul,pre,table,address,fieldset,figure {
 
 body {
     background: $baseline-color-body-background;
-    font-family: $baseline-body-font-family;
     font-weight: normal;
     font-style: normal;
     font-size: 14px;
@@ -53,7 +52,6 @@ HEADINGS
 ***************************************************/
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: $baseline-header-font-family;
     font-weight: bold;
     font-style: normal;
     color: #222222;
@@ -292,8 +290,7 @@ textarea {
     background: -webkit-linear-gradient(top, #fafafa, #ffffff);
     background: -moz-linear-gradient(top, #fafafa, #ffffff);
     background: -o-linear-gradient(top, #fafafa, #ffffff);
-    background: -ms-linear-gradient(top, #fafafa, #ffffff);    
-    font-family: $baseline-body-font-family;
+    background: -ms-linear-gradient(top, #fafafa, #ffffff);
 
     &:focus {
         border: 1px solid #aaa;
