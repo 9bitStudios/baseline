@@ -1,5 +1,8 @@
 @import "baseline.variables.scss";
 
+@include Baseline-Font-Include("Open Sans");
+@include Baseline-Font-Include("Helvetica Neue");
+
 /**************************************************
 BASIC HTML
 ***************************************************/
@@ -30,6 +33,7 @@ dl,hr,ol,ul,pre,table,address,fieldset,figure {
 
 body {
     background: $baseline-color-body-background;
+    font-family: $baseline-body-font-family;
     font-weight: normal;
     font-style: normal;
     font-size: 14px;
@@ -53,6 +57,7 @@ HEADINGS
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
+    font-family: $baseline-header-font-family;
     font-style: normal;
     color: #222222;
     text-rendering: optimizeLegibility;
