@@ -1979,9 +1979,6 @@ select {
   padding: 3px;
   min-width: 220px; }
 
-input[type="checkbox"] {
-  display: inline; }
-
 button,
 html input[type="button"],
 input[type="reset"],
