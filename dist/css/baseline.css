@@ -2375,6 +2375,7 @@ BUTTONS
     border-color: #8a2029;
     background-color: #b82525; }
     .baseline-button.red:hover {
+      color: #fff;
       background-color: #9F0C0C; }
     .baseline-button.red.gradient {
       color: #fff;
@@ -2397,6 +2398,7 @@ BUTTONS
     border-color: #622929;
     background: #D55857; }
     .baseline-button.lightred:hover {
+      color: #fff;
       background-color: #BC3F3E; }
     .baseline-button.lightred.gradient {
       color: #fff;
@@ -2419,6 +2421,7 @@ BUTTONS
     border-color: #F47A15;
     background-color: #ffad65; }
     .baseline-button.orange:hover {
+      color: #b23d21;
       background-color: #E6944C; }
     .baseline-button.orange .gradient {
       color: #b23d21;
@@ -2441,6 +2444,7 @@ BUTTONS
     border-color: #d8a52a;
     background-color: #f6fa7b; }
     .baseline-button.yellow:hover {
+      color: #785d00;
       background-color: #DDE162; }
     .baseline-button.yellow.gradient {
       color: #785d00;
@@ -2463,6 +2467,7 @@ BUTTONS
     border-color: #63a62f;
     background-color: #7fbf4d; }
     .baseline-button.green:hover {
+      color: #fff;
       background-color: #66A634; }
     .baseline-button.green.gradient {
       color: #fff;
@@ -2485,6 +2490,7 @@ BUTTONS
     border-color: #5298b4;
     background-color: #aac4f8; }
     .baseline-button.blue:hover {
+      color: #3e728d;
       background-color: #91ABDF; }
     .baseline-button.blue.gradient {
       color: #3e728d;
@@ -2507,6 +2513,7 @@ BUTTONS
     border-color: #003366;
     background-color: #546581; }
     .baseline-button.navy:hover {
+      color: #fff;
       background-color: 3B4C68; }
     .baseline-button.navy.gradient {
       color: #fff;
@@ -2529,6 +2536,7 @@ BUTTONS
     border-color: #4D9BAD;
     background: #5CB6CE; }
     .baseline-button.aqua:hover {
+      color: #fff;
       background-color: #439DB5; }
     .baseline-button.aqua.gradient {
       color: #fff;
@@ -2552,6 +2560,7 @@ BUTTONS
     border-color: #c87f9b;
     background-color: #c090bc; }
     .baseline-button.purple:hover {
+      color: #7b4559;
       background-color: #A777A3; }
     .baseline-button.purple.gradient {
       color: #fff;
@@ -2574,6 +2583,7 @@ BUTTONS
     border-color: #b68a67;
     background-color: #ece0aa; }
     .baseline-button.coffee:hover {
+      color: #7b5a41;
       background-color: #D3C791; }
     .baseline-button.coffee.gradient {
       color: #7b5a41;
@@ -2596,6 +2606,7 @@ BUTTONS
     border-color: #715b53;
     background: #675853; }
     .baseline-button.brown:hover {
+      color: #fff;
       background-color: #4E3F3A; }
     .baseline-button.brown.gradient {
       color: #fff;
@@ -2618,6 +2629,7 @@ BUTTONS
     border-color: #444444;
     background-color: #383738; }
     .baseline-button.black:hover {
+      color: #fff;
       background-color: #222; }
     .baseline-button.black.gradient {
       color: #fff;
@@ -2640,6 +2652,7 @@ BUTTONS
     border-color: #ccc;
     background-color: #fafafa; }
     .baseline-button.white:hover {
+      color: #666;
       background-color: #fafafa; }
     .baseline-button.white.gradient {
       color: #666;
@@ -2663,6 +2676,7 @@ BUTTONS
     border-color: #bbbbbb;
     background-color: #dbdbdb; }
     .baseline-button.gray:hover {
+      color: #666;
       background-color: #dbdbdb; }
     .baseline-button.gray.gradient {
       color: #666;
@@ -2685,6 +2699,7 @@ BUTTONS
     border-color: #444444;
     background-color: #414141; }
     .baseline-button.darkgray:hover {
+      color: #fff;
       background-color: #222; }
     .baseline-button.darkgray.gradient {
       color: #fff;
@@ -2707,12 +2722,14 @@ BUTTONS
     border-color: #fff;
     background: none; }
     .baseline-button.transparentlight:hover {
+      color: #fff;
       background: #000; }
   .baseline-button.transparentdark {
     color: #333;
     border-color: #333;
     background: none; }
     .baseline-button.transparentdark:hover {
+      color: #333;
       background: #fff; }
 
 /**************************************************
